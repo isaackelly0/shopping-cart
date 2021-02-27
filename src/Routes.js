@@ -12,10 +12,9 @@ import Checkout from "./components/Checkout";
 import {useState} from "react";
 
 const Routes = () => {
-  const [list, setList] = useState(1)
-  const update = () => {
-    setList(list + 1)
-    console.log(list)
+  const [list, setList] = useState([])
+  const update = (obj) => {
+    setList(newList => [...newList, obj])
   }
   return (
     <Router>
@@ -28,7 +27,7 @@ const Routes = () => {
             <Link to="/cart">Shop</Link>
           </li>
           <li>
-            <Link to="/checkout">Checkout</Link>
+            <Link to="/checkout">Checkout {list.length}</Link>
           </li>
         </ul>
       </nav>
@@ -37,10 +36,10 @@ const Routes = () => {
           <Main/>
         </Route>
         <Route path="/cart">
-          <Cart products={list}/>
+          <Cart callback={update}/>
         </Route>
         <Route path="/checkout">
-          <Checkout click={update}/>
+          <Checkout list={list}/>
         </Route>
       </Switch>
     </Router>
