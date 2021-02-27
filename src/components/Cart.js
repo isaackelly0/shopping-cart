@@ -1,6 +1,9 @@
+import Item from "./Item";
 const Cart = (props) => {
     return(
-        <div>{props.products}</div>
+        <div>
+            <Item name="sugar" callback={props.callback}/>
+        </div>
     )
 }
 export default Cart;

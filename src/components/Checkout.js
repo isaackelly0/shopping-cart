@@ -1,7 +1,7 @@
 const Checkout = (props) => {
     return(
         <div>
-            <button onClick={props.click}>Click</button>
+            {props.list[0].name}
         </div>
     )
 }
