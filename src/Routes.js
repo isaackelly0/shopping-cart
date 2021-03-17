@@ -14,17 +14,16 @@ import {useState} from "react";
 const Routes = () => {
   const [list, setList] = useState([])
   const update = (obj) => {
+    let check = true
     if(list.length){
       for(let i = 0; i < list.length; i++){
         if(list[i].name === obj.name){
-          // alert("hi")
+          check = false
           setList(
             oldList => {
               const newList = oldList.map((item) => {
                 if(item.name === obj.name){
-                  // let newItem = 
                   return {name: item.name, count: item.count + obj.count}
-                  // return (item.count + obj.count);
                 }
                 else{
                   return item;
@@ -34,6 +33,9 @@ const Routes = () => {
             }
           )
         }
+      }
+      if(check){
+        setList(newList => [...newList, obj])
       }
     }else{
       setList(newList => [...newList, obj])
