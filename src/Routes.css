@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+body{
+  margin: 0;
+}
+nav{
+  border-color: black;
+  width: auto;
+  padding: 0%;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background-color: orange;
+  padding: 0.75% 0;
+  border-color: black;
+}
+a{
+  text-decoration: none;
+  color: #282c34;
+}
+a:hover{
+  text-decoration: underline;
+}
+.once{
+  display: flex;
+}
+.list{
+  margin-left: 7%;
+  color: white;
+  background-color: orangered;
+  border-radius: 50%;
+  padding: 0% 5%;
+}

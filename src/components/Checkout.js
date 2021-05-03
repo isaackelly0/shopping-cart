@@ -1,7 +1,8 @@
+import './Checkout.css';
 const Checkout = (props) => {
     return(
         <div>
-            {props.list[0].name}
+            {props.list.map(item=>{return(<p>{item.name} {item.count}</p>)})}
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import {useState} from "react";
+import './Item.css';
 const Item = (props) => {
     const [stock, setStock] = useState(1);
     const callback = () => {

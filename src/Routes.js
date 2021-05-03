@@ -52,7 +52,7 @@ const Routes = () => {
             <Link to="/cart">Shop</Link>
           </li>
           <li>
-            <Link to="/checkout">Checkout {list.length}</Link>
+            <Link to="/checkout" className="once"> <p>Checkout</p> <p className="list">{list.length}</p> </Link>
           </li>
         </ul>
       </nav>
