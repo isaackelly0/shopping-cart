@@ -43,6 +43,9 @@ const Routes = () => {
   }
   return (
     <Router>
+      <header className="banner">
+        <h1>Shopping Cart</h1>
+      </header>
       <nav>
         <ul>
           <li>
