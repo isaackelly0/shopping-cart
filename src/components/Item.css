@@ -1,0 +1,10 @@
+.increment{
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-around;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    
+}

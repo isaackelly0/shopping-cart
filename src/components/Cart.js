@@ -1,8 +1,8 @@
 import Item from "./Item";
-import './Item.css';
+import './Cart.css';
 const Cart = (props) => {
     return(
-        <div>
+        <div className="row">
             <Item name="sugar" callback={props.callback}/>
             <Item name="milk" callback={props.callback}/>
             <Item name="eggs" callback={props.callback}/>
