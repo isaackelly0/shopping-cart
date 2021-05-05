@@ -1,7 +1,14 @@
-import {useState} from "react";
-const Catalog = (obj) => {
-    const [list, setList] = useState([])
-    setList(newList => [...newList, obj])
-    console.log(list);
+import './Catalog.css';
+const Catalog = (props) => {
+    // const [list, setList] = useState([])
+    // setList(newList => [...newList, obj])
+    // console.log(list);
+    return(
+        <div>
+            <img alt="Yp" src={props.pic}/>
+            <p>{props.name}</p>
+            <p>{props.count}</p>
+        </div>
+    )
 }
 export default Catalog;

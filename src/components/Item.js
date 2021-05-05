@@ -3,27 +3,27 @@ import './Item.css';
 const Item = (props) => {
     const [stock, setStock] = useState(1);
     const callback = () => {
-        props.callback({name: props.name, count: stock})
+        props.callback({name: props.name, count: stock, pic: props.pic})
     }
     return(
         <div className="col-3">
             <div className="center">
-                <img alt="Product picture" src={props.pic}/>
+                <img alt="Product" src={props.pic}/>
             </div>
-            <div className="center">
+            <div className="center title">
                 <h5>
                 {props.name}
                 </h5>
             </div>
             <section className="increment">
-                <button className="btn btn-primary" onClick={() => setStock(stock - 1)}>-</button>
+                <button className="btn btn-primary title" onClick={() => setStock(stock - 1)}>-</button>
                     <p>
                     {stock}
                     </p>
-                <button className="btn btn-primary" onClick={() => setStock(stock + 1)}>+</button>
+                <button className="btn btn-primary title" onClick={() => setStock(stock + 1)}>+</button>
             </section>
             <div className="center">
-                <button className="btn btn-primary" onClick={() => callback()}>Add to cart</button>
+                <button className="btn btn-primary title" onClick={() => callback()}>Add to cart</button>
             </div>
         
         </div>

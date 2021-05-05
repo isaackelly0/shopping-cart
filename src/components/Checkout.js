@@ -1,8 +1,9 @@
 import './Checkout.css';
+import Catalog from './Catalog';
 const Checkout = (props) => {
     return(
         <div>
-            {props.list.map(item=>{return(<p>{item.name} {item.count}</p>)})}
+            {props.list.map(item=>{return(<Catalog pic={item.pic} name={item.name} count={item.count} />)})}
         </div>
     )
 }

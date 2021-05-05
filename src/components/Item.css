@@ -8,3 +8,9 @@
     justify-content: center;
     
 }
+img{
+    width: 15rem;
+}
+.title{
+    font-family: 'Staatliches', cursive;
+}
