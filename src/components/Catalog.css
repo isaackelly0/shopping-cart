@@ -1,0 +1,9 @@
+.liner{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-style: ridge;
+    border-color: yellowgreen;
+    margin-bottom: 2%;
+}

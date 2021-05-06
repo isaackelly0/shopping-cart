@@ -4,7 +4,7 @@ const Catalog = (props) => {
     // setList(newList => [...newList, obj])
     // console.log(list);
     return(
-        <div>
+        <div className="liner">
             <img alt="Yp" src={props.pic}/>
             <p>{props.name}</p>
             <p>{props.count}</p>
