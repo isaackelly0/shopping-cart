@@ -6,7 +6,7 @@ const Item = (props) => {
         props.callback({name: props.name, count: stock, pic: props.pic})
     }
     return(
-        <div className="col-2 item">
+        <div className="col-lg-2 col-md-3 col-sm-4 item">
             <div className="center">
                 <img alt="Product" src={props.pic}/>
             </div>
