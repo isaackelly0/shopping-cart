@@ -11,8 +11,8 @@ const Cart = (props) => {
             <Item name="Plyers" callback={props.callback} pic="https://i.ebayimg.com/images/g/-QkAAOSwoxVdXTzd/s-l400.jpg" />
             <Item name="Drill" callback={props.callback} pic="http://images.lowes.com/product/converted/885911/885911548731_10105642.jpg" />
             <Item name="Tool Belt" callback={props.callback} pic="https://hw.menardc.com/main/items/media/PHALA001/ProductLarge/2463519MF-303-41000x1000.jpg" />         
-            <Item name="" callback={props.callback} pic="https://sc04.alicdn.com/kf/UTB8rclHcdoSdeJk43Owq6ya4XXaW.jpg" />
-            <Item name="" callback={props.callback} pic="https://cdn11.bigcommerce.com/s-spvlr46b73/images/stencil/500x659/products/538/1744/apigd7doo__39183.1605838637.jpg?c=1" />
+            <Item name="Helmet" callback={props.callback} pic="https://sc04.alicdn.com/kf/UTB8rclHcdoSdeJk43Owq6ya4XXaW.jpg" />
+            <Item name="Gloves" callback={props.callback} pic="https://cdn11.bigcommerce.com/s-spvlr46b73/images/stencil/500x659/products/538/1744/apigd7doo__39183.1605838637.jpg?c=1" />
         </div>
     )
 }
