@@ -2,6 +2,7 @@ import './Routes.css';
 import React from "react";
 import {
   BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
   Link
@@ -42,35 +43,35 @@ const Routes = () => {
     }
   }
   return (
-    <Router>
+    <HashRouter>
       <header className="banner">
         <h1>Shopping Cart</h1>
       </header>
       <nav>
         <ul>
           <li>
-            <Link to="shopping-cart/">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="shopping-cart/cart">Shop</Link>
+            <Link to="/cart">Shop</Link>
           </li>
           <li>
-            <Link to="shopping-cart/checkout" className="once"> <p>Checkout</p> <p className="list">{list.length}</p> </Link>
+            <Link to="/checkout" className="once"> <p>Checkout</p> <p className="list">{list.length}</p> </Link>
           </li>
         </ul>
       </nav>
       <Switch>
-        <Route exact path="shopping-cart/">
+        <Route exact path="/">
           <Main/>
         </Route>
-        <Route path="shopping-cart/cart">
+        <Route path="/cart">
           <Cart callback={update}/>
         </Route>
-        <Route path="shopping-cart/checkout">
+        <Route path="/checkout">
           <Checkout list={list}/>
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
