@@ -49,24 +49,24 @@ const Routes = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="shopping-cart/">Home</Link>
           </li>
           <li>
-            <Link to="/cart">Shop</Link>
+            <Link to="shopping-cart/cart">Shop</Link>
           </li>
           <li>
-            <Link to="/checkout" className="once"> <p>Checkout</p> <p className="list">{list.length}</p> </Link>
+            <Link to="shopping-cart/checkout" className="once"> <p>Checkout</p> <p className="list">{list.length}</p> </Link>
           </li>
         </ul>
       </nav>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="shopping-cart/">
           <Main/>
         </Route>
-        <Route path="/cart">
+        <Route path="shopping-cart/cart">
           <Cart callback={update}/>
         </Route>
-        <Route path="/checkout">
+        <Route path="shopping-cart/checkout">
           <Checkout list={list}/>
         </Route>
       </Switch>
